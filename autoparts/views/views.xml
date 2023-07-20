@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="autoparts.list">
+      <field name="name">autoparts list</field>
+      <field name="model">autoparts.make</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="autoparts.action_window">
+      <field name="name">autoparts window</field>
+      <field name="res_model">autoparts.make</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="auto-parts-categories.action_server">
+      <field name="name">auto-parts-categories server</field>
+      <field name="model_id" ref="model_auto-parts-categories_auto-parts-categories"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+  <!--
+    <menuitem name="autoparts" id="autoparts.menu_root" sequence="0" />
+
+  -->
+    <!-- menu categories -->
+
+    <!--
+    <menuitem name="Menu 1" id="autoparts.menu_1" parent="autoparts.menu_root" sequence="0"/>
+    <menuitem name="Makes" id="autoparts.makes" parent="autoparts.menu_1" sequence="0" action="autoparts.action_window"/>
+    -->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="auto-parts-categories.menu_1_list" parent="auto-parts-categories.menu_1"
+              action="auto-parts-categories.action_window"/>
+    <menuitem name="Server to list" id="auto-parts-categories" parent="auto-parts-categories.menu_2"
+              action="auto-parts-categories.action_server"/>
+-->
+  </data>
+</odoo>

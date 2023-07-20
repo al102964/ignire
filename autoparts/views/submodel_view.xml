@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="view_autoparts_submodel_tree">
+      <field name="name">autoparts list</field>
+      <field name="model">autoparts.submodel</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="make"/>
+          <field name="model_id"/>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="autoparts_submodels_action_window">
+      <field name="name">submodel window</field>
+      <field name="res_model">autoparts.submodel</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+</data>
+</odoo>

@@ -1,0 +1,31 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="view_autoparts_part_tree">
+      <field name="name">autoparts list</field>
+      <field name="model">autoparts.part</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="brand_id"/>
+          <field name="name"/>
+          <field name="part_number"/>
+          <!-- <field name="category_1"/>
+          <field name="category_2"/>-->
+          <field name="category_3"/>
+          <field name="price_regular"/>
+          <field name="part_attributes"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="autoparts_part_action_window">
+      <field name="name">part window</field>
+      <field name="res_model">autoparts.part</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+</data>
+</odoo>

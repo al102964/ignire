@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="view_autoparts_category_3_tree">
+      <field name="name">autoparts list</field>
+      <field name="model">autoparts.category_3</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="category_1" widget="many2many_tags"/>
+          <field name="category_2_id" widget="many2many_tags"/>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="autoparts_category_3_action_window">
+      <field name="name">submodel window</field>
+      <field name="res_model">autoparts.category_3</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+</data>
+</odoo>

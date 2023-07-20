@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <menuitem name="autoparts" id="autoparts.menu_root" action="autoparts_submodels_action_window" sequence="0" />
+
+        <!-- menus vehicles -->
+
+        <menuitem name="Vehicle" id="autoparts.vehicle" parent="autoparts.menu_root" sequence="0"/>
+        <menuitem name="Makes" id="autoparts.makes" parent="autoparts.vehicle" action="autoparts_makes_action_window" sequence="0"/>
+        <menuitem name="Models" id="autoparts.models" parent="autoparts.vehicle" action="autoparts_models_action_window" sequence="1"/>
+        <menuitem name="Submodels" id="autoparts.submodels" parent="autoparts.vehicle" action="autoparts_submodels_action_window" sequence="2"/>
+
+
+        <!-- menus categories -->
+        <menuitem name="Categories" id="autoparts.categories" parent="autoparts.menu_root" sequence="1"/>
+        <menuitem name="Category1" id="autoparts.category_1" parent="autoparts.categories" action="autoparts_category_1_action_window" sequence="0"/>
+        <menuitem name="Category2" id="autoparts.category_2" parent="autoparts.categories" action="autoparts_category_2_action_window" sequence="1"/>
+        <menuitem name="Category3" id="autoparts.category_3" parent="autoparts.categories" action="autoparts_category_3_action_window" sequence="2"/>
+
+        <!-- menus parts -->
+        <menuitem name="Parts" id="autoparts.parts" parent="autoparts.menu_root" sequence="2"/>
+        <menuitem name="Brand" id="autoparts.brands" parent="autoparts.parts" action="autoparts_brand_action_window" sequence="0"/>
+        <menuitem name="Part_name" id="autoparts.part_name" parent="autoparts.parts" action="autoparts_part_name_action_window" sequence="1"/>
+        <menuitem name="Parts" id="autoparts.partss" parent="autoparts.parts" action="autoparts_part_action_window" sequence="1"/>
+    </data>
+</odoo>

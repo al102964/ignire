@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+autoparts.access_autoparts_make,access_autoparts_make,autoparts.model_autoparts_make,base.group_user,1,1,1,1
+autoparts.access_autoparts_model,access_autoparts_model,autoparts.model_autoparts_model,base.group_user,1,1,1,1
+autoparts.access_autoparts_submodel,access_autoparts_submodel,autoparts.model_autoparts_submodel,base.group_user,1,1,1,1
+autoparts.access_autoparts_category_1,access_autoparts_category_1,autoparts.model_autoparts_category_1,base.group_user,1,1,1,1
+autoparts.access_autoparts_category_2,access_autoparts_category_2,autoparts.model_autoparts_category_2,base.group_user,1,1,1,1
+autoparts.access_autoparts_category_3,access_autoparts_category_3,autoparts.model_autoparts_category_3,base.group_user,1,1,1,1
+autoparts.access_autoparts_brand,access_autoparts_brand,autoparts.model_autoparts_brand,base.group_user,1,1,1,1
+autoparts.access_autoparts_part_name,access_autoparts_part_name,autoparts.model_autoparts_part_name,base.group_user,1,1,1,1
+autoparts.access_autoparts_part,access_autoparts_part,autoparts.model_autoparts_part,base.group_user,1,1,1,1
